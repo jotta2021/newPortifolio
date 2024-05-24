@@ -5,7 +5,7 @@ import { Switch } from "@/components/ui/switch"
 
 
 interface LanguageProps {
-    language: string,
+  language: 'pt-br' | 'en',
     setLanguage: (language: string) => void;
     darkMode: string,
     setDarkMode: (darkMode: boolean) => void;
