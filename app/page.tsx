@@ -44,7 +44,9 @@ export default function App() {
       "projects": "Projects"
     }
   }
-
+  if (!(language in texts)) {
+    return null; // or handle the error appropriately
+}
 
   const { developer, aboutTitle, about, skills, projects } = texts[language];
   const scrollToSection = (sectionId) => {
